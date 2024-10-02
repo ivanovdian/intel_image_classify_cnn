@@ -10,6 +10,7 @@ See the [example Google model cards](https://modelcards.withgoogle.com/model-rep
 
 **Model Architecture:** The model is a modified dynamic and enhanced LeNet-5, with the following changes:
 - Input colour mages are not resized to match the input requirement of the CNN. The imaeges are with various dimations dimensions smallest, 76x150 to biggest 150x150 pixels.
+- A third convolutional layer is added for better training performance.
 - Dynamically adjust the first fully connected layer if necessary to accomodate the various sapes and size of the images.
 - The final fully connected layer is modified to output predictions for six classes noted above.
 - The Adam optimizer is used instead of SGD for better convergence and performance.
