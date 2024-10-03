@@ -18,8 +18,10 @@ See the [example Google model cards](https://modelcards.withgoogle.com/model-rep
 
 ## Performance
 
-Give a summary graph or metrics of how the model performs. Remember to include how you are measuring the performance and what data you analysed it on. <br>
-The model performs well.
+<font color='orange'>REMOVE</font> Give a summary graph or metrics of how the model performs. Remember to include how you are measuring the performance and what data you analysed it on. REMOVE<br>
+The model performs very well. Being trained on fourteen thousand samples and validated against three thousand samples the observed confusion matrix and accuracy is nearly 99% and 84% respectively. The data consists of a large and wide examples of real life scenes and it would seem that the model generalises well from all the complex data available. The predicted random samples from the con-classified data samples seem to hit the mark 100%, although, admittedly, with a prediction rndom sample set to 10, more predictions are needed so true performance can be observed:
+![train_loader_confusion_matrix_and_accuracy](train_loader_confusion_matrix_and_accuracy.png)
+![validationtest_loader_confusion_matrix_and_accuracy](validationtest_loader_confusion_matrix_and_accuracy.png)
 
 ## Limitations
 
